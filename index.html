@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="email" id="email" placeholder="Email" required /><br />
+    <input type="password" id="password" placeholder="Password" required /><br />
+    <select id="role" required>
+      <option value="">Select Role</option>
+      <option value="admin">Admin</option>
+      <option value="user">User</option>
+    </select><br />
+    <button type="submit">Register</button>
+  </form>
+
+  <p>Already have an account?</p>
+  <button onclick="window.location.href='login.html'">Login</button>
+
+  <script src="register.js"></script>
+</body>
+</html>
